@@ -6,7 +6,7 @@
         <link href="css/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
         <link rel="icon" type="image/x-icon" href="img/spire.ico">
-        <title>Sprirometer</title>
+        <title>Spirometer</title>
     </head>
     <body>
         <div class="reveal">
@@ -59,6 +59,59 @@
                 <section><p>To design a device to measure and monitor peak flow rates. The device is to be used in high populated areas where there is a low number of consultants relevant to cases presented. The peak flow monitoring must be functional in areas where there is no acess to large scale data recording facilities. The operation must be developed to take pressure off clinicians in these areas.</p>
                 <p>The device is intended to be used by educators and children in the age bracket of 5-14 years old. This device will be used a part of a scheme to reduce asthma in these regions</p>
                 </section>
+
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ranking</th>
+                                <th>Requirement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Functionality</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Repeatability</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Accurate</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Data Recording</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>User friendly</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Affordable</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Durable</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Self administration</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Life span</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Ergonomic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </section>
 
 
@@ -67,6 +120,23 @@
 
                 <section><h2>Concept Designs</h2></section>
                 <section data-background="img/concept_designs2.gif"></section>
+                <section><h2>Calculations</h2>
+                    <pre><code>
+                        Internal chamber
+                            r = 20 m
+                            L = 150 mm
+                            Thickness = 3mm
+                    </code></pre>
+                </section>
+                <section>
+                <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+                    <script type="text/javascript" async
+                      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+                    </script>
+                  <p>Math Formula</p>
+                  <p> $\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$</p>
+                  <p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+                </section>
                 <section data-background="img/concept_designs1.gif"></section>
                 <section data-background="img/concept_designs3.gif"></section>
             </section>
@@ -193,7 +263,9 @@
                     </section>
 
                     <section>
-                        <section><h2>Where we'll use it</h2></section>
+                        <section id="fragments" data-background-video="img/lagos_school.webm" data-background-video-loop data-background-video-muted><h2>Where'll use it?</h2>
+                        <h1 class="fragment" data-fragment-index="0">... Schools!!</h1></section>
+                        <section><h3>Lesson Plans</h3></section>
                     </section>
 
                   <section>
@@ -212,12 +284,13 @@
         <script>
             Reveal.initialize(
                 {
+
                 //parallaxBackgroundImage: 'img/universe.jpg',
                 //parallaxBackgroundSize: '2100px 900px',
                 //parallaxBackgroundHorizontal: 200,
                 //parallaxBackgroundVertical: 40,
-                progress: false,
-                controls: false,
+                progress: true,
+                controls: true,
                 touch: true
                 });
         </script>
