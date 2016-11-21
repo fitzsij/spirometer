@@ -49,7 +49,7 @@ d3.tsv("js/data2.tsv", type, function(error, data) {
       .attr("y", 6)
       .attr("dy", "0.71em")
       .attr("fill", "#000")
-      .text("Temperature, ºF");
+      .text("Peak Expository Flow, L/min");
 
   var city = g.selectAll(".city")
     .data(cities)
