@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/white.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/d3.css">
+        <link href="css/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        <style type="text/css">
+
+            .img-circle {
+        border-radius: 50%;
+        }
+        
+        .ui-mobile [data-role=header],.ui-mobile [data-role=footer]{
+        background-color: rgba(0, 89, 187, 0.71);
+        color: beige;
+        text-shadow: 1px 1px 12px #000;
+        font-size: 22px;
+        }
+        img{
+        width:100%;
+        }
+        form label,legend
+        {
+        color:#123456;
+        }
+        p{
+        text-align:center;
+        }
+        span{
+        color:red;
+        }
+
+
+        </style>
+
+        <title>User Manual</title>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                        <section><h2>Assembly Instructions</h2></section>
+                        <section>
+                            <h3>Step 1</h3>
+                            <h4>Lay the parts out</h4>
+
+                            <i class="fa fa-hand-rock-o fa-5x" aria-hidden="true"></i>
+                            <i class="fa fa-thermometer-full fa-5x" aria-hidden="true"></i>
+
+
+                            </section>                           
+
+                            <section>
+                            <h3>Step 2</h3>
+                            <h4>Screw Mouth-Piece to Inner Tube</h4>
+
+                            <i class="fa fa-commenting-o fa-5x" aria-hidden="true"></i>
+                            <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i>
+
+                            </section>
+                            <section>
+                            <h3>Step 3</h3>
+                            <h4>Place ball into inner tube and ensure flaps are ok</h4>
+
+
+                            <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
+                            <i class="fa fa-line-chart fa-5x" aria-hidden="true"></i>
+
+                            </section>
+                            <section>
+                            <h3>Step 4</h3>
+                            <h4>Attach cap with spring to top to complete</h4>
+
+                            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+                            <i class="fa fa-eye fa-5x" aria-hidden="true"></i>
+
+                            </section>
+                </section>
+                <section>
+                    <section><h2>Usage Instructions</h2></section>
+
+
+
+                        <section data-background="img/lungs.gif" data-background-video-loop data-background-size="300px"">
+                            <h3>Step 1: Relax and Breath Easy :)</h3>
+                        </section>
+
+
+                        <section>
+
+                        <h3>Pick up the Spirometer upright and put the mouthpiece to your lips</h3>
+
+                        <i class="fa fa-sign-language fa-5x" aria-hidden="true"></i>
+                        <i class="fa fa-frown-o fa-5x" aria-hidden="true"></i>
+
+                        </section>
+
+                        <section data-background="img/kiduse.gif" data-background-video-loop data-background-size="300px""></section>
+                        <section>
+
+                        <h3>Blow as hard as you can -- the ball will float higher depending on how hard your lungs work</h3>
+
+                        <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+                        <i class="fa fa-wrench fa-5x" aria-hidden="true"></i>
+
+
+                        </section>
+
+                        
+                        <section>
+
+                        <h3>What reading did you get? Write it down along with what time it is on paper or on our app</h3>
+
+                        <i class="fa fa-hand-peace-o fa-5x" aria-hidden="true"></i>
+                        <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
+
+                        </section>
+                        <section data-background="img/asthma.gif" data-background-video-loop data-background-size="300px""></section>
+
+                        <section>
+
+                        <h3>Take a look at your chart and follow the instructions you get</h3>
+
+                        <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+                        <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i>
+
+                        </section>
+                        <section data-background="img/lungsgraph.gif" data-background-video-loop data-background-size="300px""></section>
+
+                        
+                </section>
+
+                <section>
+                    <section>
+                                <div data-role="page">
+                                <div>
+                                <h5>Patient Data Upload</h5>
+                                </div>
+                                <div data-role="main" class="ui-content" >
+                                <form method="post" action="#pageone" data-ajax="false">
+                                <label for="name">Name : <span>*</span></label>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                                <label for="email">Email: <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Email"/>
+                                <fieldset data-role="controlgroup">
+                                <legend>Gender:</legend>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                </fieldset>
+                                <fieldset data-role="controlgroup">
+                                <legend>Time of recording:</legend>
+                                <label for="graduation">Morning</label>
+                                <input type="checkbox" id="graduation" value="graduation">
+                                <label for="postgraduation">Noon</label>
+                                <input type="checkbox" id="postgraduation" value="postgraduation">
+                                <label for="other">Night</label>
+                                <input type="checkbox" id="other" value="other">
+                                </fieldset>
+                                <label for="info">Measurement recorded:</label>
+                                <textarea name="addinfo" id="info" placeholder="Type your number here"></textarea>
+                                <input type="submit" data-inline="true" value="Submit" data-theme="b">
+                                </form>
+                                </div>
+                                </div>
+                    </section>
+
+                        <section>
+                            <svg width="960" height="500"></svg>
+                            <script src="js/d3/d3.min.js"></script>
+                            <script src="js/percentgraph.js"></script>
+                        </section>
+
+                        <section data-background="img/openMRS.png"></section>
+
+                </section>
+            </div>
+        </div>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize();
+        </script>
+    </body>
+</html>
